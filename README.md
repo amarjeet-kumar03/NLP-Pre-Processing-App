@@ -1,68 +1,99 @@
-🧠 NLP Preprocessing App (Streamlit)
+🧠 NLP Preprocessing & Feature Engineering App
 
-An interactive Natural Language Processing (NLP) Preprocessing Web App built using Streamlit, NLTK, spaCy, and Scikit-learn.
-This app demonstrates core NLP concepts such as tokenization, text cleaning, stemming, lemmatization, Bag of Words, TF-IDF, and word embeddings through a simple UI.
+An interactive NLP Preprocessing Web Application built using Streamlit that demonstrates core Natural Language Processing (NLP) techniques such as text cleaning, tokenization, stemming, lemmatization, Bag of Words, TF-IDF, and word embeddings.
 
-🚀 Features
+This project is designed for students, beginners, and academic demonstrations to understand how raw text is converted into meaningful numerical features.
 
-The app allows users to input text and apply different NLP preprocessing techniques:
+✨ Key Features
+🔹 Clean and intuitive Streamlit UI
+🔹 Real-time NLP processing on user-provided text
+🔹 Visual and tabular representation of results
+🔹 Covers both text preprocessing and feature extraction
 
-✅ Implemented NLP Techniques
-
-Tokenization
-
+🧪 NLP Techniques Implemented
+1️⃣ Tokenization
 Sentence Tokenization
-
 Word Tokenization
-
 Character Tokenization
 
-Text Cleaning
-
+2️⃣ Text Cleaning
 Lowercasing
-
-URL, email, mention, hashtag removal
-
-Number & punctuation removal
-
+Removal of URLs, emails, mentions, hashtags
+Removal of numbers & punctuation
 Stopword removal using spaCy
+Regex-based normalization
 
-Stemming
-
+3️⃣ Stemming
 Porter Stemmer
+Lancaster Stemmer
+Side-by-side comparison table
 
-Lancaster Stemmer (comparison)
+4️⃣ Lemmatization
+POS tagging
+Lemma extraction using spaCy NLP pipeline
 
-Lemmatization
+5️⃣ Bag of Words (BoW)
+Word frequency representation
+Pie-chart visualization of top words
 
-POS tagging + Lemma using spaCy
+6️⃣ TF-IDF
+Term importance scoring
+Ranking of most important words
 
-Bag of Words (BoW)
+7️⃣ Word Embeddings
+Word vector magnitude using spaCy embeddings
+Semantic representation of words
 
-Word frequency table
+🛠️ Technology Stack
+Category	Tools
+Language	Python
+UI	Streamlit
+NLP	NLTK, spaCy
+ML	Scikit-learn
+Data Handling	Pandas
+Visualization	Matplotlib
+📂 Project Structure
+nlp-preprocessing-app/
+│
+├── app.py              # Main Streamlit application
+├── README.md           # Project documentation
+├── requirements.txt    # Project dependencies
 
-Pie chart visualization (Top words)
+⚙️ Installation & Setup
+Step 1: Clone Repository
+git clone https://github.com/your-username/nlp-preprocessing-app.git
+cd nlp-preprocessing-app
 
-TF-IDF
+Step 2: Install Dependencies
+pip install streamlit nltk spacy pandas scikit-learn matplotlib
 
-Importance score of words
+Step 3: Download spaCy Model
+python -m spacy download en_core_web_sm
 
-Word Embeddings
+Step 4: Run the App
+streamlit run app.py
 
-spaCy word vector magnitude display
+🧾 Sample Input
+Amar is the BEST HOD of HIT and loves NLP.
 
-🛠️ Tech Stack
+🎯 Learning Outcomes
+Understand text preprocessing pipeline
+Learn feature extraction techniques in NLP
+Visualize word importance and frequency
+Gain hands-on experience with NLP libraries
+Build interactive ML applications using Streamlit
 
-Python
+🎓 Academic Relevance
+✔ NLP Lab
+✔ Mini Project
+✔ Semester Practical
+✔ Resume / Portfolio Project
+✔ Viva Demonstration
 
-Streamlit – Web UI
+👨‍💻 Author
+Amarjeet Kumar
+Computer Science Student
+Interests: NLP, Machine Learning, AI
 
-NLTK – Tokenization & Stemming
-
-spaCy – Lemmatization & Embeddings
-
-Scikit-learn – BoW & TF-IDF
-
-Pandas – Data handling
-
-Matplotlib – Visualization
+📜 License
+This project is open-source and intended for educational purposes.
